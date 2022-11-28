@@ -70,6 +70,19 @@ const config = {
         autoCollapseCategories: false,
       },
     },
+    plugins: [
+        async function tailwindPlugin() {
+          return {
+            name: "docusaurus-tailwindcss",
+            configurePostCss(postcssOptions) {
+              postcssOptions.plugins.push(require("tailwindcss"));
+              postcssOptions.plugins.push(require("autoprefixer"));
+
+              return postcssOptions;
+            },
+          };
+        },
+    ]
   },
     // ({
     //   navbar: {
@@ -142,19 +155,6 @@ const config = {
     //     darkTheme: darkCodeTheme,
     //   },
     // }),
-  plugins: [
-    async function tailwindPlugin() {
-      return {
-        name: "docusaurus-tailwindcss",
-        configurePostCss(postcssOptions) {
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
-
-          return postcssOptions;
-        },
-      };
-    },
-  ]
 };
 
 module.exports = config;
