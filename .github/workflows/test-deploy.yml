@@ -1,5 +1,9 @@
 name: Test Build
 
+concurrency:
+  group: build-test
+  cancel-in-progress: true
+
 on:
   pull_request:
     branches:
