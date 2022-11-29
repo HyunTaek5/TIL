@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdev_log=self.webpackChunkdev_log||[]).push([[8482],{8482:e=>{e.exports=JSON.parse('{"permalink":"/dev-log/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
