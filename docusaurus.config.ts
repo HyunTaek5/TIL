@@ -7,7 +7,7 @@ const config = {
   tagline: "",
   titleDelimiter: "@",
   url: 'https://HyunTaek5.github.io',
-  baseUrl: '/',
+  baseUrl: '/dev-log',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
