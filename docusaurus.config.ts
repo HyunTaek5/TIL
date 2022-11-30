@@ -1,11 +1,11 @@
-import navbar from "./config/navbar.config";
+import navbar from './config/navbar.config';
 
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const config = {
   title: 'HyunTaek Oh',
-  tagline: "",
-  titleDelimiter: "@",
+  tagline: '',
+  titleDelimiter: '@',
   url: 'https://HyunTaek5.github.io',
   baseUrl: '/dev-log',
   onBrokenLinks: 'warn',
@@ -38,7 +38,7 @@ const config = {
   presets: [
     [
       'classic',
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./config/sidebars.js'),
         },
@@ -48,7 +48,7 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -71,90 +71,90 @@ const config = {
       },
     },
     plugins: [
-        async function tailwindPlugin() {
-          return {
-            name: "docusaurus-tailwindcss",
-            configurePostCss(postcssOptions) {
-              postcssOptions.plugins.push(require("tailwindcss"));
-              postcssOptions.plugins.push(require("autoprefixer"));
+      async function tailwindPlugin() {
+        return {
+          name: 'docusaurus-tailwindcss',
+          configurePostCss(postcssOptions) {
+            postcssOptions.plugins.push(require('tailwindcss'));
+            postcssOptions.plugins.push(require('autoprefixer'));
 
-              return postcssOptions;
-            },
-          };
-        },
-    ]
+            return postcssOptions;
+          },
+        };
+      },
+    ],
   },
-    // ({
-    //   navbar: {
-    //     title: 'My Site',
-    //     logo: {
-    //       alt: 'My Site Logo',
-    //       src: 'img/logo.svg',
-    //     },
-    //     items: [
-    //       {
-    //         type: 'doc',
-    //         docId: 'intro',
-    //         position: 'left',
-    //         label: 'Tutorial',
-    //       },
-    //       {to: '/blog', label: 'Blog', position: 'left'},
-    //       {
-    //         href: 'https://github.com/HyunTaek5',
-    //         label: 'GitHub',
-    //         position: 'right',
-    //       },
-    //     ],
-    //   },
-    //   footer: {
-    //     style: 'dark',
-    //     links: [
-    //       {
-    //         title: 'Docs',
-    //         items: [
-    //           {
-    //             label: 'Tutorial',
-    //             to: '/docs/intro',
-    //           },
-    //         ],
-    //       },
-    //       {
-    //         title: 'Community',
-    //         items: [
-    //           {
-    //             label: 'Stack Overflow',
-    //             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-    //           },
-    //           {
-    //             label: 'Discord',
-    //             href: 'https://discordapp.com/invite/docusaurus',
-    //           },
-    //           {
-    //             label: 'Twitter',
-    //             href: 'https://twitter.com/docusaurus',
-    //           },
-    //         ],
-    //       },
-    //       {
-    //         title: 'More',
-    //         items: [
-    //           {
-    //             label: 'Blog',
-    //             to: '/blog',
-    //           },
-    //           {
-    //             label: 'GitHub',
-    //             href: 'https://github.com/facebook/docusaurus',
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //     copyright: `Copyright © ${new Date().getFullYear()} HyunTaek Oh`,
-    //   },
-    //   prism: {
-    //     darkTheme: darkCodeTheme,
-    //   },
-    // }),
+  // ({
+  //   navbar: {
+  //     title: 'My Site',
+  //     logo: {
+  //       alt: 'My Site Logo',
+  //       src: 'img/logo.svg',
+  //     },
+  //     items: [
+  //       {
+  //         type: 'doc',
+  //         docId: 'intro',
+  //         position: 'left',
+  //         label: 'Tutorial',
+  //       },
+  //       {to: '/blog', label: 'Blog', position: 'left'},
+  //       {
+  //         href: 'https://github.com/HyunTaek5',
+  //         label: 'GitHub',
+  //         position: 'right',
+  //       },
+  //     ],
+  //   },
+  //   footer: {
+  //     style: 'dark',
+  //     links: [
+  //       {
+  //         title: 'Docs',
+  //         items: [
+  //           {
+  //             label: 'Tutorial',
+  //             to: '/docs/intro',
+  //           },
+  //         ],
+  //       },
+  //       {
+  //         title: 'Community',
+  //         items: [
+  //           {
+  //             label: 'Stack Overflow',
+  //             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+  //           },
+  //           {
+  //             label: 'Discord',
+  //             href: 'https://discordapp.com/invite/docusaurus',
+  //           },
+  //           {
+  //             label: 'Twitter',
+  //             href: 'https://twitter.com/docusaurus',
+  //           },
+  //         ],
+  //       },
+  //       {
+  //         title: 'More',
+  //         items: [
+  //           {
+  //             label: 'Blog',
+  //             to: '/blog',
+  //           },
+  //           {
+  //             label: 'GitHub',
+  //             href: 'https://github.com/facebook/docusaurus',
+  //           },
+  //         ],
+  //       },
+  //     ],
+  //     copyright: `Copyright © ${new Date().getFullYear()} HyunTaek Oh`,
+  //   },
+  //   prism: {
+  //     darkTheme: darkCodeTheme,
+  //   },
+  // }),
 };
 
 module.exports = config;
