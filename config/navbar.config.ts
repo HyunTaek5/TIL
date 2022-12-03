@@ -13,6 +13,11 @@ const navbar = {
     //     label: 'Daily Log'
     // },
     {
+      to: '/about',
+      label: 'About',
+      position: 'left',
+    },
+    {
       to: '/w/dev-log',
       label: 'Dev Log',
       position: 'left',
@@ -25,12 +30,14 @@ const navbar = {
     {
       href: 'https://github.com/HyunTaek5',
       position: 'right',
+      label: 'GitHub',
       className: 'navbar-github-link',
       'aria-label': 'GitHub repository',
     },
     {
       href: 'https://linkedin.com/in/dylanoh',
       position: 'right',
+      label: 'LinkedIn',
       className: 'navbar-linkedin-link',
       'aria-label': 'LinkedIn Account',
     },
