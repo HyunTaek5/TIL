@@ -6,9 +6,7 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  content: [
-    './src/**/*.{js,ts,tsx,jsx}',
-  ],
+  content: ['./src/**/*.{js,ts,tsx,jsx}'],
   theme: {
     truncate: {
       lines: {

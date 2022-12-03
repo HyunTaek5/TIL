@@ -7,12 +7,12 @@ const config = {
   tagline: '',
   titleDelimiter: '@',
   url: 'https://HyunTaek5.github.io',
-  baseUrl: '/dev-log',
+  baseUrl: '/blog',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'HyunTaek5',
-  projectName: 'dev-log',
+  projectName: 'blog',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ko'],
@@ -55,7 +55,6 @@ const config = {
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
-      disableSwitch: true,
       respectPrefersColorScheme: true,
     },
     prism: {
@@ -150,9 +149,6 @@ const config = {
   //       },
   //     ],
   //     copyright: `Copyright © ${new Date().getFullYear()} HyunTaek Oh`,
-  //   },
-  //   prism: {
-  //     darkTheme: darkCodeTheme,
   //   },
   // }),
 };
