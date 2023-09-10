@@ -5,6 +5,8 @@
 /build
 *.config.js
 *.js.map
+*.obsidian
+
 
 # Generated files
 .docusaurus
