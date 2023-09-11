@@ -6,7 +6,6 @@
 *.config.js
 *.js.map
 *.obsidian
-/blog/template.md
 
 # Generated files
 .docusaurus
