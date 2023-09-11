@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktil=self.webpackChunktil||[]).push([[8559],{8559:e=>{e.exports=JSON.parse('{"permalink":"/TIL/blog/tags/type-orm","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

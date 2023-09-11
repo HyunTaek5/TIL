@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktil=self.webpackChunktil||[]).push([[2627],{2627:e=>{e.exports=JSON.parse('{"label":"TypeORM","permalink":"/TIL/blog/tags/type-orm","allTagsPath":"/TIL/blog/tags","count":1}')}}]);

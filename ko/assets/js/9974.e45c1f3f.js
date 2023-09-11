@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktil=self.webpackChunktil||[]).push([[9974],{9974:t=>{t.exports=JSON.parse('{"label":"TypeScript","permalink":"/TIL/ko/blog/tags/type-script","allTagsPath":"/TIL/ko/blog/tags","count":1}')}}]);
