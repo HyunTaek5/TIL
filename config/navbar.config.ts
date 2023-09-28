@@ -1,3 +1,26 @@
+import * as fs from "fs";
+import * as path from "path";
+
+const getRecentTilLink = () => {
+  const today = new Date()
+  today.setDate(today.getDate() + 2)
+
+  const todayYear = today.getFullYear();
+
+  let file = ''
+
+  while ((file = today.toISOString().split('T')[0])) {
+    const filePath = path.join(__dirname, '..', 'docs',
+        todayYear.toString(),`${todayYear}-${today.getMonth() < 9 ? '0': ''}${today.getMonth() + 1}`, file + '.md')
+
+    if (fs.existsSync(filePath)) {
+      return `docs/${todayYear.toString()}/${todayYear}-${today.getMonth() < 9 ? '0' : ''}${today.getMonth() + 1}/${file}`
+    }
+
+    today.setDate(today.getDate() - 1)
+  }
+}
+
 const navbar = {
   title: '8:20 TIL',
   logo: {
@@ -7,13 +30,29 @@ const navbar = {
 
   items: [
     {
+      type: 'dropdown',
+      label: 'TIL',
+      position: 'left',
+      items: [
+        {
+          type: 'doc',
+          docId: 'intro',
+          label: 'Hi 👋🏻',
+        },
+        {
+          to: getRecentTilLink(),
+          label: 'Today 🌤',
+        },
+      ],
+    },
+    {
       to: 'https://hyuntaek5.github.io',
       label: 'About',
       position: 'left',
     },
     {
       to: 'https://eight20.tistory.com',
-      label: 'Dev Log',
+      label: 'Dev Logs',
       position: 'left',
     },
     {
@@ -29,10 +68,6 @@ const navbar = {
       label: 'LinkedIn',
       className: 'navbar-linkedin-link',
       'aria-label': 'LinkedIn Account',
-    },
-    {
-      type: 'localeDropdown',
-      position: 'right',
     },
   ],
 };
