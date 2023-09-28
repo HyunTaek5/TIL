@@ -13,10 +13,6 @@ const config = {
     favicon: 'img/favicon.ico',
     organizationName: 'HyunTaek5',
     projectName: 'TIL',
-    i18n: {
-        defaultLocale: 'en',
-        locales: ['en', 'ko'],
-    },
     webpack: {
         jsLoader: (isServer) => ({
             loader: require.resolve('swc-loader'),
