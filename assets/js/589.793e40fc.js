@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktil=self.webpackChunktil||[]).push([[589],{3589:s=>{s.exports=JSON.parse('{"label":"PG","permalink":"/TIL/docs/tags/pg","allTagsPath":"/TIL/docs/tags","count":1,"items":[{"id":"2023/2023-09/2023-09-25","title":"2023-09-25","description":"\uac1c\ub150","permalink":"/TIL/docs/2023/2023-09/2023-09-25"}]}')}}]);
