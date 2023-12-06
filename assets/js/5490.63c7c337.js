@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktil=self.webpackChunktil||[]).push([[5490],{5490:s=>{s.exports=JSON.parse('{"label":"SpringJPA","permalink":"/TIL/docs/tags/spring-jpa","allTagsPath":"/TIL/docs/tags","count":1,"items":[{"id":"2023/2023-12/2023-12-03","title":"2023-12-03","description":"\ub354\ud2f0 \uccb4\ud0b9","permalink":"/TIL/docs/2023/2023-12/2023-12-03"}]}')}}]);
